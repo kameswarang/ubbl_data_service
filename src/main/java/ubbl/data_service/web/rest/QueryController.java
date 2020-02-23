@@ -23,6 +23,7 @@ public class QueryController {
     @PostMapping(path="/query", produces="application/json")
     public String executeQuery(@RequestBody String query) {
         Document result = mongoOps.executeCommand("{ find: 'playerInfo', filter: " + query + "}");
+        
         Document cursor = result.get("cursor", Document.class);
         List<Document> firstBatch = cursor.get("firstBatch", List.class);
         
