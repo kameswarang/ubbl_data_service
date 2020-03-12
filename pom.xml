@@ -35,6 +35,11 @@
             <artifactId>spring-data-mongodb</artifactId>
         </dependency>
 		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20190722</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -63,19 +68,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <environmentVariables>
-                        <MONGODB_URI>mongodb://localhost/ubbdb</MONGODB_URI>
-                    </environmentVariables>
-                </configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
