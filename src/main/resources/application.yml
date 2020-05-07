@@ -17,4 +17,4 @@ eureka:
   client:
     enabled: true
     serviceUrl:
-      defaultZone: http://ip-172-31-21-143:8080/eureka
+      defaultZone: ${EUREKA_SERVER_URI}

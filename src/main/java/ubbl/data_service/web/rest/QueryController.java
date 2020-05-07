@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
-@CrossOrigin(origins="*")
 public class QueryController {  
     @Autowired
     public MongoOperations mongoOps;
