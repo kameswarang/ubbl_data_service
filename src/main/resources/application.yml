@@ -10,14 +10,24 @@ logging:
   level:
     org.springframework.boot.autoconfigure.logging: INFO
 
+---
+spring:
+  profiles: dev
 server:
   port: 8081
+---
 
 eureka:
   instance:
     hostname: ${DOMAIN_NAME}
-    instanceId: ${DOMAIN_NAME}:${spring.application.name}:${server.port}
+    instanceId: ${DOMAIN_NAME}
   client:
     enabled: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URI}
+      
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 600000
+  ConnectTimeout: 10000
