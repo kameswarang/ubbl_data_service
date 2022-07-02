@@ -2,12 +2,12 @@
 
 This app was developed as a solution to a full-stack hiring challenge and can be accessed here: https://ubblqueryservice-kganesh1795.herokuapp.com/
 
-###  Important instructions:
+###  Important instructions
 There are two levels of the problem. Once you complete the first level, you can proceed to the second level (next question). It is not compulsory to attempt the second level and you can attempt the second level only when you complete the first level. However, it is recommended to proceed with the second level once you have provided the submission for the first level.
 
 Note: We highly encourage you to submit your work even if it is at an incomplete stage.
 
-### Problem statement:
+### Problem statement
 For the new season of the Big Bash League (BBL), the owners of different cricket teams are reconstructing their teams to ensure that their team wins this season. They require crunched data to build their desired team and guarantee a win. You are required to help the team coaches, who are not friendly to computer technologies, to make a quick and effective decision by retrieving the data that they require.
 
 In order to help them, you are required to implement a full stack system for the Big Bash League by using the AngularJS framework for the front end of the system. The system must implement the following features:
